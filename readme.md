@@ -36,7 +36,7 @@ A modern, interactive Japanese language learning platform built with React, Type
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/nikhilpahujaa/ZenMaster.git
+   git clone https://github.com/rohit-yadav5/hackathon-techniki.git
    cd ZenMaster
    ```
 
@@ -174,11 +174,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Tailwind CSS** for utility-first styling
 - **Framer Motion** for smooth animations
 - **React Team** for the amazing framework
-
-## 📞 **Support**
-
-- **Issues**: [GitHub Issues](https://github.com/nikhilpahujaa/ZenMaster/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/nikhilpahujaa/ZenMaster/discussions)
 
 ---
 
