@@ -1,0 +1,27 @@
+{
+  "name": "ZenMaster - Learn Japanese with AI",
+  "short_name": "ZenMaster",
+  "description": "Master Japanese with ZenMaster's interactive lessons and AI-powered learning",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f97316",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "language", "productivity"],
+  "lang": "en",
+  "dir": "ltr"
+}

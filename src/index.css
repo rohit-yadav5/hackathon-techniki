@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Lovable Japanese Learning Platform Design System
+   Gen-Z friendly minimal design with Japanese aesthetics
+   All colors MUST be HSL for proper theme switching
+*/
+
+@layer base {
+  :root {
+    /* Base Theme - Light */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    
+    /* Cards & Surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --surface-elevated: 0 0% 98%;
+    
+    /* Interactive Elements */
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    
+    /* Brand Colors - Japanese Inspired */
+    --primary: 0 84% 60%; /* Vibrant red - traditional Japanese */
+    --primary-foreground: 0 0% 98%;
+    --primary-soft: 0 84% 95%;
+    
+    /* Secondary - Cherry Blossom Pink */
+    --secondary: 330 81% 60%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-soft: 330 81% 95%;
+    
+    /* Accent - Deep Blue */
+    --accent: 220 91% 65%;
+    --accent-foreground: 0 0% 98%;
+    --accent-soft: 220 91% 95%;
+    
+    /* Neutral Grays */
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --subtle: 0 0% 90%;
+    --subtle-foreground: 0 0% 40%;
+    
+    /* Status Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 3.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    
+    /* Borders & Inputs */
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 84% 60%;
+    
+    /* Japanese Aesthetic Elements */
+    --cherry-blossom: 330 81% 85%;
+    --forest-green: 142 69% 58%;
+    --gold-accent: 45 93% 58%;
+    --ink-blue: 220 39% 11%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(0 84% 60%), hsl(330 81% 60%));
+    --gradient-secondary: linear-gradient(135deg, hsl(220 91% 65%), hsl(142 69% 58%));
+    --gradient-subtle: linear-gradient(135deg, hsl(0 0% 98%), hsl(0 0% 94%));
+    --gradient-cherry: linear-gradient(135deg, hsl(330 81% 95%), hsl(0 84% 95%));
+    
+    /* Shadows & Effects */
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
+    --shadow-glow: 0 0 0 1px hsl(var(--primary) / 0.15), 0 0 20px hsl(var(--primary) / 0.3);
+    
+    /* Animation Timing */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Spacing & Layout */
+    --radius: 0.75rem;
+    --radius-sm: 0.5rem;
+    --radius-lg: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Theme - Elegant Night Mode */
+    --background: 220 39% 11%;
+    --foreground: 0 0% 98%;
+    
+    /* Cards & Surfaces */
+    --card: 220 13% 18%;
+    --card-foreground: 0 0% 98%;
+    --surface-elevated: 220 13% 22%;
+    
+    /* Interactive Elements */
+    --popover: 220 13% 18%;
+    --popover-foreground: 0 0% 98%;
+    
+    /* Brand Colors - Japanese Inspired (Dark) */
+    --primary: 0 84% 70%;
+    --primary-foreground: 0 0% 98%;
+    --primary-soft: 0 84% 25%;
+    
+    /* Secondary - Cherry Blossom Pink (Dark) */
+    --secondary: 330 81% 70%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-soft: 330 81% 25%;
+    
+    /* Accent - Deep Blue (Dark) */
+    --accent: 220 91% 75%;
+    --accent-foreground: 0 0% 98%;
+    --accent-soft: 220 91% 25%;
+    
+    /* Neutral Grays */
+    --muted: 220 13% 25%;
+    --muted-foreground: 0 0% 63.9%;
+    --subtle: 220 13% 30%;
+    --subtle-foreground: 0 0% 70%;
+    
+    /* Status Colors */
+    --success: 142 76% 50%;
+    --success-foreground: 0 0% 98%;
+    --warning: 38 92% 60%;
+    --warning-foreground: 0 0% 3.9%;
+    --destructive: 0 62.8% 60.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    /* Borders & Inputs */
+    --border: 220 13% 25%;
+    --input: 220 13% 25%;
+    --ring: 0 84% 70%;
+    
+    /* Japanese Aesthetic Elements (Dark) */
+    --cherry-blossom: 330 81% 35%;
+    --forest-green: 142 69% 40%;
+    --gold-accent: 45 93% 65%;
+    --ink-blue: 220 91% 75%;
+    
+    /* Gradients (Dark) */
+    --gradient-primary: linear-gradient(135deg, hsl(0 84% 70%), hsl(330 81% 70%));
+    --gradient-secondary: linear-gradient(135deg, hsl(220 91% 75%), hsl(142 69% 50%));
+    --gradient-subtle: linear-gradient(135deg, hsl(220 13% 18%), hsl(220 13% 25%));
+    --gradient-cherry: linear-gradient(135deg, hsl(330 81% 25%), hsl(0 84% 25%));
+    
+    /* Shadows & Effects (Dark) */
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.3), 0 2px 4px -2px hsl(0 0% 0% / 0.3);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.4), 0 4px 6px -4px hsl(0 0% 0% / 0.4);
+    --shadow-glow: 0 0 0 1px hsl(var(--primary) / 0.3), 0 0 20px hsl(var(--primary) / 0.5);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
