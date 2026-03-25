@@ -54,7 +54,7 @@ const testimonials = [
   {
     name: "Sarah Kim",
     role: "Business Student",
-            content: "AriGato made learning Japanese fun and addictive! I went from complete beginner to N4 level in 6 months.",
+            content: "ZenMaster made learning Japanese fun and addictive! I went from complete beginner to N4 level in 6 months.",
     rating: 5
   },
   {

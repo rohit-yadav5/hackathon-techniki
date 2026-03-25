@@ -72,7 +72,7 @@ export function AIPronunciation({ words, onComplete }: AIPronunciationProps) {
   }, []);
 
   // Mock AI pronunciation analysis (in real app, this would call an AI service)
-  const analyzePronunciation = async (audioBlob: Blob, word: string): Promise<PronunciationResult> => {
+  const analyzePronunciation = async (audioBlob: Blob, word: PronunciationWord): Promise<PronunciationResult> => {
     // Simulate AI processing time
     await new Promise(resolve => setTimeout(resolve, 2000));
     
