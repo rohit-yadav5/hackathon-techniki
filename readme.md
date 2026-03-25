@@ -1,5 +1,7 @@
 # ZenMaster — Learn Japanese with AI
 
+> **My role on this project: Backend Developer** — responsible for API design, database schema, authentication, and server-side integration (Supabase). The frontend in this repository is built by the team; my backend work provides the data layer and auth infrastructure it connects to.
+
 A modern, full-featured Japanese language learning platform built with React 18, TypeScript, and AI-powered tools. Covers all five JLPT levels (N5–N1) with interactive lessons, spaced-repetition flashcards, AI pronunciation practice, gamification, and a community forum.
 
 ---
